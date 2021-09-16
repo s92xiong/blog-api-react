@@ -1,9 +1,12 @@
 import React from 'react';
 
-function About() {
+function About(props) {
+
+  const { name } = props;
+
   return (
     <div className="about">
-      
+      <h1>About {name}</h1>
     </div>
   );
 }

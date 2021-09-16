@@ -1,10 +1,10 @@
 import React from 'react';
 import "./Styles/Navbar.css";
 
-function Navbar() {
+function Navbar({ name }) {
   return (
     <nav className="navbar">
-      <h1>Sheuh Xiong</h1>
+      <h1>{name}</h1>
       <a href="/about">
         <span>About</span>
       </a>
