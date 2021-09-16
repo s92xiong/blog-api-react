@@ -3,27 +3,23 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Card from './Components/Card/Card';
 import Navbar from './Components/Navbar/Navbar';
+import loadBlogData from './Javascripts/loadBlogData';
 
 function App() {
 
   const [blogData, setBlogData] = useState();
 
   useEffect(() => {
-    loadData();
+    loadBlogData(setBlogData);
   }, []);
 
-  const loadData = async () => {
-    const response = await fetch("https://enigmatic-bastion-98317.herokuapp.com/");
-    const json_data = await response.json();
-    setBlogData(json_data);
-    console.log(json_data);
-  };
-
   return (
-    <div className="App">
-      <Navbar />
-      <Card blogData={blogData} />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Card blogData={blogData} />
+      </div>  
+    </BrowserRouter>
   );
 }
 
