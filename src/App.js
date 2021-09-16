@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Card from './Components/Card/Card';
 
 function App() {
 
-  const [data, setData] = useState();
+  const [blogData, setBlogData] = useState();
 
   useEffect(() => {
     loadData();
@@ -12,13 +13,13 @@ function App() {
   const loadData = async () => {
     const response = await fetch("https://enigmatic-bastion-98317.herokuapp.com/");
     const resData = await response.json();
-    setData(resData);
+    setBlogData(resData);
     console.log(resData);
   };
 
   return (
     <div className="App">
-
+      <Card blogData={blogData} />
     </div>
   );
 }
