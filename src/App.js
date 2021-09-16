@@ -17,7 +17,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Card blogData={blogData} />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => (<Card {...props} blogData={blogData} />)}
+          />
+        </Switch>
       </div>  
     </BrowserRouter>
   );
