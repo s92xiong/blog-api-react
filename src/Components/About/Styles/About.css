@@ -1,19 +1,27 @@
 .about {
   padding: 4em 17em;
   color: #2c2c2c;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.about h1 {
+.about .about-info {
+  border-bottom: 1px solid #cacaca;
+}
+
+.about .about-info h1 {
   font-family: 'Alef', sans-serif;
 }
 
-.about span {
+.about .about-info span {
   font-family: 'PT Serif', serif;
   font-weight: 200;
-  font-size: 1.05em;
+  font-size: 1.2em;
 }
 
 .about img {
+  margin-left: 3em;
   width: 200px;
   height: 200px;
 }
