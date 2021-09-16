@@ -1,10 +1,24 @@
+import { useEffect, useState } from 'react';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
 
 function App() {
+
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  const loadData = async () => {
+    const response = await fetch("https://enigmatic-bastion-98317.herokuapp.com/");
+    const resData = await response.json();
+    setData(resData);
+    console.log(resData);
+  };
+
   return (
     <div className="App">
-      <Navbar />
+
     </div>
   );
 }
