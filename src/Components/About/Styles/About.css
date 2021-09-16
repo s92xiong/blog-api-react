@@ -1,1 +1,20 @@
-/* No CSS *//*# sourceMappingURL=About.css.map */
+.about {
+  padding: 4em 17em;
+  color: #2c2c2c;
+}
+
+.about h1 {
+  font-family: 'Alef', sans-serif;
+}
+
+.about span {
+  font-family: 'PT Serif', serif;
+  font-weight: 200;
+  font-size: 1.05em;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=About.css.map */

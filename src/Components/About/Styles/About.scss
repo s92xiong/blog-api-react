@@ -1,3 +1,19 @@
 .about {
+  padding: 4em 17em;
+  color: rgb(44, 44, 44);
   
+  h1 {
+    font-family: 'Alef', sans-serif;
+  }
+
+  span {
+    font-family: 'PT Serif', serif;
+    font-weight: 200;
+    font-size: 1.05em;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
 }
