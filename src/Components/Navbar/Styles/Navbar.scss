@@ -1,0 +1,25 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  padding: 0 5em;
+
+  border-bottom: 1px solid rgb(228, 228, 228);
+
+  h1 {
+    font-family: 'Alef', sans-serif;
+    margin-right: 2em;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    span {
+      font-family: 'Cabin', sans-serif;
+      color: rgb(117, 117, 117);
+    }
+  }
+}
