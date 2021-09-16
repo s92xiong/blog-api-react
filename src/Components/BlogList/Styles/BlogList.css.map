@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACnB,OAAO,EAAE,KAAK;CACf",
     "sources": [
-        "Card.scss"
+        "BlogList.scss"
     ],
     "names": [],
-    "file": "Card.css"
+    "file": "BlogList.css"
 }

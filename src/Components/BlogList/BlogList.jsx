@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Styles/Card.css";
+import "./Styles/BlogList.css";
 
 function BlogList(props) {
   const { blogData } = props;
