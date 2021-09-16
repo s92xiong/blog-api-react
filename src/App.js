@@ -7,11 +7,11 @@ import Navbar from './Components/Navbar/Navbar';
 import loadBlogData from './Javascripts/loadBlogData';
 
 function App() {
-
   const [blogData, setBlogData] = useState();
-
+  
+  console.clear();
   useEffect(() => {
-    loadBlogData(setBlogData);
+    // loadBlogData(setBlogData);
   }, []);
 
   return (
