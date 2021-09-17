@@ -26,8 +26,38 @@
   margin: 0.25em 0;
 }
 
+.blog-list-container .blog-card-sub-title {
+  margin: 0 0 0.5em 0;
+}
+
+.blog-list-container .blog-list-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
 .blog-list-container .blog-card-text {
   font-size: 1.2em;
   line-height: 1.5em;
+}
+
+.blog-list-container .comment-container {
+  margin: 1em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-list-container .comment-container .comment-icon {
+  width: 25px;
+  height: auto;
+}
+
+.blog-list-container .comment-container p {
+  margin: 0 0 0.1em 0.5em;
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=BlogList.css.map */

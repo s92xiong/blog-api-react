@@ -25,8 +25,35 @@
     margin: 0.25em 0;
   }
 
+  .blog-card-sub-title {
+    margin: 0 0 0.5em 0;
+  }
+
+  .blog-list-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+  }
+
   .blog-card-text {
     font-size: 1.2em;
     line-height: 1.5em;
   }
+
+  .comment-container {
+    margin: 1em 0 0 0;
+    display: flex;
+    align-items: center;
+
+    .comment-icon {
+      width: 25px;
+      height: auto;
+    }
+
+    p {
+      margin: 0 0 0.1em 0.5em;
+      font-size: 1.1em;
+    }
+  }
+
 }
