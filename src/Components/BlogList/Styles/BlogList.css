@@ -1,4 +1,33 @@
 .blog-list-container {
-  padding: 0 5em;
+  margin: 4em 0;
+  padding: 0 17em;
+  font-family: 'PT Serif', serif;
+  color: #292929;
+}
+
+.blog-list-container .blog-card {
+  margin-bottom: 2em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.blog-list-container a {
+  text-decoration: none;
+  color: #292929;
+}
+
+.blog-list-container .blog-card-date {
+  color: #757575;
+}
+
+.blog-list-container .blog-card-title {
+  font-family: 'Alef', sans-serif;
+  font-size: 2.25em;
+  margin: 0.25em 0;
+}
+
+.blog-list-container .blog-card-text {
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 /*# sourceMappingURL=BlogList.css.map */

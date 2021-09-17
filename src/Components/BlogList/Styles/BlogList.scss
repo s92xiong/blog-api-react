@@ -1,3 +1,32 @@
 .blog-list-container {
-  padding: 0 5em;
+  margin: 4em 0;
+  padding: 0 17em;
+  font-family: 'PT Serif', serif;
+  color: rgb(41, 41, 41);
+  
+  .blog-card {
+    margin-bottom: 2em;
+    padding-bottom: 3em;
+    border-bottom: 1px solid rgb(170, 170, 170);
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+  }
+
+  .blog-card-date {
+    color: rgb(117, 117, 117);
+  }
+
+  .blog-card-title {
+    font-family: 'Alef', sans-serif;
+    font-size: 2.25em;
+    margin: 0.25em 0;
+  }
+
+  .blog-card-text {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
 }

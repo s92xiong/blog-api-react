@@ -9,18 +9,10 @@ import loadBlogData from './Javascripts/loadBlogData';
 function App() {
 
   const [blogData, setBlogData] = useState();
-  // const [blogTime, setBlogTime] = useState();
 
   useEffect(() => {
     loadBlogData(setBlogData);
   }, []);
-
-  // useEffect(() => {
-  //   if (!blogData) return;
-  //   return () => {
-  //     for (let i = 0;)
-  //   }
-  // }, [blogData]);
 
   return (
     <BrowserRouter>

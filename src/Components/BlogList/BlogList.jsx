@@ -12,8 +12,11 @@ function BlogList(props) {
         blogData.map((blog, i) => {
           return (
             <div className="blog-card" key={i}>
-              <h1>{blog.title}</h1>
-              <p>{blog.text}</p>
+              <p className="blog-card-date">{blog.date_month_day}</p>
+              <a href="/">
+                <h1 className="blog-card-title">{blog.title}</h1>
+              </a>
+              <p className="blog-card-text">{blog.text}</p>
             </div>
           );
         })
