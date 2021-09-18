@@ -22,7 +22,11 @@
   .blog-card-title {
     font-family: 'Alef', sans-serif;
     font-size: 2.25em;
-    margin: 0.25em 0;
+    margin: 0.25em 0 0.1em 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .blog-card-sub-title {
