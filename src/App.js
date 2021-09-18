@@ -18,18 +18,20 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar name="Sheuh Xiong" />
-        <Switch>
-          <Route
-            // Homepage
-            exact
-            path="/"
-            render={(props) => (<BlogList {...props} blogData={blogData} />)}
-          />
-          <Route
-            path="/about"
-            render={(props) => (<About {...props} name="Sheuh Xiong" />)}
-          />
-        </Switch>
+        <div className="container">
+          <Switch>
+            <Route
+              // Homepage
+              exact
+              path="/"
+              render={(props) => (<BlogList {...props} blogData={blogData} />)}
+            />
+            <Route
+              path="/about"
+              render={(props) => (<About {...props} name="Sheuh Xiong" />)}
+            />
+          </Switch>
+        </div>
       </div>  
     </BrowserRouter>
   );

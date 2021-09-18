@@ -1,6 +1,5 @@
 .blog-list-container {
   margin: 4em 0;
-  padding: 0 17em;
   font-family: 'PT Serif', serif;
   color: #292929;
 }
@@ -24,6 +23,10 @@
   font-family: 'Alef', sans-serif;
   font-size: 2.25em;
   margin: 0.25em 0;
+}
+
+.blog-list-container .blog-card-sub-title {
+  color: #6b6b6b;
 }
 
 .blog-list-container .blog-card-img {
