@@ -26,14 +26,10 @@
   margin: 0.25em 0;
 }
 
-.blog-list-container .blog-card-sub-title {
-  margin: 0 0 0.5em 0;
-}
-
-.blog-list-container .blog-list-img {
+.blog-list-container .blog-card-img {
   width: 100%;
   height: auto;
-  margin-bottom: 0.5em;
+  margin: 1em 0 2em;
 }
 
 .blog-list-container .blog-card-text {

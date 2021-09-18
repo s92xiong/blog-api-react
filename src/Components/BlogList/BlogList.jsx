@@ -4,6 +4,7 @@ import commentIcon from "../../images/comment-icon.png";
 
 function BlogList(props) {
   const { blogData } = props;
+  const randomImg = "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80";
 
   if (!blogData) return <>...Loading</>;
   
@@ -19,14 +20,14 @@ function BlogList(props) {
               </a>
               <h2 className="blog-card-sub-title">{blog.sub_title}</h2>
               <img
-                className="blog-list-img"
+                className="blog-card-img"
                 src={
-                  (blog.image !== "") ? blog.image : "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+                  (blog.image !== "") ? blog.image : randomImg
                 }
                 alt="" 
               />
               <p className="blog-card-text">{blog.text}</p>
-              <a href="/">
+              <a href={`/${blog._id}/#comments`}>
                 <div className="comment-container">
                   <img className="comment-icon" src={commentIcon} alt="" />
                   <p>{blog.total_comments}</p>
