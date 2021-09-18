@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import About from './Components/About/About';
+import Blog from './Components/Blog/Blog';
 import BlogList from './Components/BlogList/BlogList';
 import Navbar from './Components/Navbar/Navbar';
 import loadBlogData from './Javascripts/loadBlogData';
@@ -27,8 +28,14 @@ function App() {
               render={(props) => (<BlogList {...props} blogData={blogData} />)}
             />
             <Route
+              exact
               path="/about"
               render={(props) => (<About {...props} name="Sheuh Xiong" />)}
+            />
+            <Route
+              exact
+              path="/posts/:id"
+              render={(props) => (<Blog {...props} />)}
             />
           </Switch>
         </div>

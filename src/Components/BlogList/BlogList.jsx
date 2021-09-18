@@ -15,7 +15,7 @@ function BlogList(props) {
           return (
             <div className="blog-card" key={i}>
               <p className="blog-card-date">{blog.date_month_day}</p>
-              <a href={`/${blog._id}`}>
+              <a href={`/posts/${blog._id}`}>
                 <h1 className="blog-card-title">{blog.title}</h1>
               </a>
               <h2 className="blog-card-sub-title">{blog.sub_title}</h2>
@@ -27,7 +27,7 @@ function BlogList(props) {
                 alt="" 
               />
               <p className="blog-card-text">{blog.text}</p>
-              <a href={`/${blog._id}/#comments`}>
+              <a href={`/posts/${blog._id}/#comments`}>
                 <div className="comment-container">
                   <img className="comment-icon" src={commentIcon} alt="" />
                   <p>{blog.total_comments}</p>
