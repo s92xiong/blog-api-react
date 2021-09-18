@@ -23,7 +23,13 @@
 
 .navbar span {
   font-family: 'Cabin', sans-serif;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   color: #757575;
+}
+
+.navbar span:hover {
+  color: #4e4e4e;
 }
 
 @media only screen and (max-width: 576px) {

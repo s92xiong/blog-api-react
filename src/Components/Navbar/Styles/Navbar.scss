@@ -14,13 +14,19 @@
   }
 
   a {
+    // About
     text-decoration: none;
     color: black;
   }
   
   span {
     font-family: 'Cabin', sans-serif;
+    transition: 300ms;
     color: rgb(117, 117, 117);
+
+    &:hover {
+      color: rgb(78, 78, 78);
+    }
   }
 }
 
