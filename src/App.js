@@ -5,14 +5,14 @@ import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
 import BlogList from './Components/BlogList/BlogList';
 import Navbar from './Components/Navbar/Navbar';
-import loadBlogData from './Javascripts/loadBlogData';
+import load_all_blog_data from './Javascripts/loadAllBlogData';
 
 function App() {
 
   const [blogData, setBlogData] = useState();
 
   useEffect(() => {
-    loadBlogData(setBlogData);
+    load_all_blog_data(setBlogData);
   }, []);
 
   return (

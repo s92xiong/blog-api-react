@@ -1,14 +1,7 @@
-const loadBlogData = async (setBlogData) => {
-  const response = await fetch("https://enigmatic-bastion-98317.herokuapp.com/");
+const loadBlogData = async (match, setBlog) => {
+  const response = await fetch(`https://enigmatic-bastion-98317.herokuapp.com${match.url}`);
   const json_data = await response.json();
-
-  const json_data_updated_time = json_data.map(obj => {
-    const array_dates = new Date(obj.timestamp).toString().split(" ");
-    const date_month_day = `${array_dates[1]} ${array_dates[2]}`;
-    return {...obj, date_month_day};
-  });
-
-  setBlogData(json_data_updated_time);
+  setBlog(json_data);
 };
 
 export default loadBlogData;
