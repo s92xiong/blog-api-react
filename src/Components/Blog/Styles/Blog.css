@@ -4,6 +4,10 @@
   color: #292929;
 }
 
+.blog .blog-date {
+  color: #757575;
+}
+
 .blog .blog-title {
   font-family: 'Alef', sans-serif;
   font-size: 2.25em;
