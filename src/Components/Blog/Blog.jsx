@@ -18,17 +18,17 @@ function Blog({ match }) {
 
   return (
     <div className="blog">
-      <h1>{blog.title}</h1>
-      <h1>{blog.sub_title}</h1>
+      <h1 className="blog-title">{blog.title}</h1>
+      <h1 className="blog-subtitle">{blog.sub_title}</h1>
       <img
-        // className="blog-img"
+        className="blog-img"
         style={{ width: "100%", height: "auto" }}
         src={
           (blog.image !== "") ? blog.image : randomImg
         }
         alt="" 
       />
-      <p className="blog-card-text">{blog.text}</p>
+      <p className="blog-text">{blog.text}</p>
       {
         blog.comments.map((comment, i) => (
           <div className="blog-comment" key={i}>
