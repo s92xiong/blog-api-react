@@ -29,6 +29,7 @@ function Blog({ match }) {
         alt="" 
       />
       <p className="blog-text">{blog.text}</p>
+      <h2 id="comments">Comments</h2>
       {
         blog.comments.map((comment, i) => (
           <div className="blog-comment" key={i}>
