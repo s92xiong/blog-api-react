@@ -18,6 +18,7 @@ function Blog({ match }) {
 
   return (
     <div className="blog">
+      <p className="blog-date">{blog.date_month_day}</p>
       <h1 className="blog-title">{blog.title}</h1>
       <h1 className="blog-subtitle">{blog.sub_title}</h1>
       <img
