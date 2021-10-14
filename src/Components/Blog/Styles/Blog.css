@@ -44,4 +44,9 @@
 .blog .blog-comment h3 {
   font-weight: 600;
 }
+
+.blog .blog-comment .comment-text {
+  margin: 1em 0;
+  font-size: 0.95em;
+}
 /*# sourceMappingURL=Blog.css.map */

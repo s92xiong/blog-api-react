@@ -32,11 +32,11 @@ function Blog({ match }) {
       <p className="blog-text">{blog.text}</p>
       <h2 id="comments">Comments</h2>
       {
-        blog.comments.map((comment, i) => (
+        blog.new_comments.map((comment, i) => (
           <div className="blog-comment" key={i}>
             <h3>{comment.name}</h3>
-            <p>{comment.text}</p>
-            <p>{comment.timestamp}</p>
+            <p className="comment-text">{comment.text}</p>
+            <p>{comment.new_time}</p>
           </div>
         ))
       }
