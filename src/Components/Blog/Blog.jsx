@@ -7,6 +7,26 @@ function Blog({ match }) {
   const [blog, setBlog] = useState([]);
   const randomImg = "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80";
 
+  const [input, setInput] = useState({
+    name: "",
+    text: "",
+  });
+
+  const handleChange = (e) => {
+    setInput({ ...input, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await fetch(`https://enigmatic-bastion-98317.herokuapp.com/posts/${match.params.id}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({...input, blog_post: match.params.id }),
+    });
+
+    window.location.reload();
+  };
+
   useEffect(() => {
     loadBlogData(match, setBlog);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -40,6 +60,26 @@ function Blog({ match }) {
           </div>
         ))
       }
+      
+      <form onSubmit={handleSubmit} method="POST">
+        <input 
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={input.name}
+          required
+          onChange={handleChange}
+        />
+        <textarea 
+          name="text"
+          placeholder="Share your thoughts" 
+          value={input.text}
+          required
+          onChange={handleChange}
+        >
+        </textarea>
+        <button type="submit">Submit Comment</button>
+      </form>
     </div>
   );
 }
