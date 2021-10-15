@@ -4,10 +4,8 @@ const load_all_blog_data = async (setBlogData) => {
 
   const json_data_updated_time = json_data.map(obj => {
     
-    // Shorten text to two paragraphs only, append 3 periods to end of string
-    let string_arr = obj.text.split(". ");
-    string_arr.splice(2);
-    obj.text = `${string_arr.join(". ")}...`;
+    // Shorten text to 200 chars
+    obj.text = `${obj.text.slice(0, 200)}...`;
 
     // Adjust date, return date as "Sep 10"
     const array_dates = new Date(obj.timestamp).toString().split(" ");
