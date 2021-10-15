@@ -1,12 +1,13 @@
 import React from 'react';
 import "./Styles/BlogList.css";
+import Loader from "../Loader/Loader";
 import commentIcon from "../../images/comment-icon.png";
 
 function BlogList(props) {
   const { blogData } = props;
   const randomImg = "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80";
 
-  if (!blogData) return <>...Loading</>;
+  if (!blogData) return <Loader />;
   
   return (
     <div className="blog-list-container">

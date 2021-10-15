@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import loadBlogData from '../../Javascripts/loadBlogData';
+import Loader from '../Loader/Loader';
 import "./Styles/Blog.css";
 
 function Blog({ match }) {
@@ -33,9 +34,7 @@ function Blog({ match }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (blog.length === 0) {
-    return <p>Loading blog...</p>
-  }
+  if (blog.length === 0) return <Loader />;
 
   return (
     <div className="blog">

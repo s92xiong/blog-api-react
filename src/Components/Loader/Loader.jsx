@@ -1,10 +1,11 @@
 import React from 'react';
-import img from "../../images/loader-icon.png";
+import "./Styles/Loader.css";
+import img from "../../images/loading-icon.png";
 
 function Loader() {
   return (
-    <div className="loader">
-      <img src={img} alt="" />
+    <div className="loader-container">
+      <img className="loader rotating" src={img} alt="" />
     </div>
   );
 }
