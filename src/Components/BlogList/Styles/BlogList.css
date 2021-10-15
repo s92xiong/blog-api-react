@@ -49,10 +49,17 @@
 
 .blog-list-container .read-more {
   margin-top: 0.7em;
+}
+
+.blog-list-container .read-more a {
   color: #1a8917;
 }
 
 .blog-list-container .comment-container {
+  float: left;
+}
+
+.blog-list-container .comment-container a {
   margin: 1em 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +81,7 @@
 
 .blog-list-container .sidebar {
   position: absolute;
-  left: -45%;
+  left: -46.5%;
   padding: 20px;
   width: 275px;
   height: 400px;
@@ -87,7 +94,7 @@
 
 .blog-list-container .sidebar .about-sidebar {
   margin-top: 1em;
-  margin-left: 0.5em;
+  margin-left: 0.6em;
 }
 
 .blog-list-container .sidebar .about-sidebar h3 {

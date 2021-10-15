@@ -36,15 +36,16 @@ function BlogList(props) {
                 alt="" 
               />
               <p className="blog-card-text">{blog.text}</p>
-              <a href={`/posts/${blog._id}/`}>
-                <p className="read-more">Read More</p>
-              </a>
-              <a href={`/posts/${blog._id}/#comments`}>
-                <div className="comment-container">
+              <p className="read-more">
+                <a href={`/posts/${blog._id}/`}>Read More</a>
+              </p>
+              <div className="comment-container">
+                <a href={`/posts/${blog._id}/#comments`}>
                   <img className="comment-icon" src={commentIcon} alt="" />
                   <p>{blog.total_comments}</p>
-                </div>
-              </a>
+                </a>
+              </div>
+              <br />
             </div>
           );
         })
