@@ -3,6 +3,7 @@ import "./Styles/BlogList.css";
 import Loader from "../Loader/Loader";
 import commentIcon from "../../images/comment-icon.png";
 import img from "../../images/img-icon.png";
+import Sidebar from './Sidebar';
 
 function BlogList(props) {
   const { blogData } = props;
@@ -12,13 +13,7 @@ function BlogList(props) {
   
   return (
     <div className="blog-list-container">
-      <section className="sidebar">
-        <img src={img} alt="" />
-        <div className="about-sidebar">
-          <h3>Sheuh Xiong</h3>
-          <p>Full Stack Developer currently learning and building projects via The Odin Project. Sharing my interests and experiences through this blog.</p>
-        </div>
-      </section>
+      <Sidebar />
       {
         blogData.map((blog, i) => {
           return (

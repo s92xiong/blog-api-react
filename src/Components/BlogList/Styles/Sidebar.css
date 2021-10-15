@@ -1,0 +1,32 @@
+.sidebar {
+  position: absolute;
+  left: -46.5%;
+  padding: 20px;
+  width: 275px;
+  height: 400px;
+}
+
+.sidebar img {
+  width: 150px;
+  height: 150px;
+}
+
+.sidebar .about-sidebar {
+  margin-top: 1em;
+  margin-left: 0.6em;
+}
+
+.sidebar .about-sidebar h3 {
+  margin-bottom: 0.5em;
+}
+
+.sidebar .about-sidebar p {
+  color: #757575;
+}
+
+@media only screen and (max-width: 1250px) {
+  .sidebar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Sidebar.css.map */
