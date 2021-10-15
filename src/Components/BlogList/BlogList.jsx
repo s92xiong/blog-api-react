@@ -27,7 +27,7 @@ function BlogList(props) {
               <a href={`/posts/${blog._id}`}>
                 <h1 className="blog-card-title">{blog.title}</h1>
               </a>
-              <h2 className="blog-card-sub-title">{blog.sub_title}</h2>
+              {/* <h2 className="blog-card-sub-title">{blog.sub_title}</h2> */}
               <img
                 className="blog-card-img"
                 src={
