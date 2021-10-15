@@ -16,7 +16,7 @@
 
 .blog .blog-subtitle {
   color: #6b6b6b;
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
 
 .blog img {
@@ -32,7 +32,7 @@
 }
 
 .blog #comments {
-  margin-top: 2em;
+  margin: 2em 0;
   color: black;
   text-decoration: underline;
 }
