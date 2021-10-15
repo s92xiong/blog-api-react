@@ -3,6 +3,7 @@
   color: #292929;
   margin: 3em auto;
   width: 50%;
+  position: relative;
 }
 
 .blog-list-container .blog-card {
@@ -69,6 +70,15 @@
 .blog-list-container .comment-container p {
   margin: 0 0 0.1em 0.5em;
   font-size: 1.1em;
+}
+
+.blog-list-container .sidebar {
+  position: fixed;
+  top: 50%;
+  left: 40px;
+  width: 200px;
+  height: 100px;
+  background-color: red;
 }
 
 @media only screen and (max-width: 1100px) {

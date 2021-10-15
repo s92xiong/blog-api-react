@@ -1,4 +1,9 @@
-.about {
+.about-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.about-container .about {
   padding: 4em 0;
   color: #2c2c2c;
   display: -webkit-inline-box;
@@ -6,29 +11,38 @@
   display: inline-flex;
 }
 
-.about .about-info {
+.about-container .about .about-info {
   border-bottom: 1px solid #cacaca;
 }
 
-.about .about-info h1 {
+.about-container .about .about-info h1 {
   font-family: 'Alef', sans-serif;
 }
 
-.about .about-info span {
+.about-container .about .about-info span {
   font-family: 'PT Serif', serif;
   font-weight: 200;
   font-size: 1.2em;
 }
 
-.about img {
+.about-container .about img {
   margin-bottom: 2em;
   margin-left: 3em;
   width: 200px;
   height: 200px;
 }
 
+@media only screen and (max-width: 1100px) {
+  .about-container {
+    width: 70%;
+  }
+}
+
 @media only screen and (max-width: 720px) {
-  .about {
+  .about-container {
+    width: 70%;
+  }
+  .about-container .about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -40,19 +54,19 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .about .about-info {
+  .about-container .about .about-info {
     border-bottom: none;
     padding: 0 1em;
   }
-  .about .about-info h1 {
+  .about-container .about .about-info h1 {
     margin: 1em 0 0.2em 0;
     font-family: 'Alef', sans-serif;
     font-size: 1.5em;
   }
-  .about .about-info span {
+  .about-container .about .about-info span {
     margin-bottom: 1em;
   }
-  .about img {
+  .about-container .about img {
     margin: 0;
     width: 100%;
     height: auto;
@@ -60,7 +74,10 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .about .about-info {
+  .about-container {
+    width: 80%;
+  }
+  .about-container .about .about-info {
     border-bottom: none;
     padding: 0 1em;
   }

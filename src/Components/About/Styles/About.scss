@@ -1,71 +1,85 @@
-.about {
-  padding: 4em 0;
-  color: rgb(44, 44, 44);
+.about-container {
+  margin: 0 auto;
+  width: 50%;
 
-  display: inline-flex;
-  
-  .about-info {
-    border-bottom: 1px solid #cacaca;
-
-    h1 {
-      font-family: 'Alef', sans-serif;
-    }
-  
-    span {
-      font-family: 'PT Serif', serif;
-      font-weight: 200;
-      font-size: 1.2em;
-    }
-  }
-
-  img {
-    margin-bottom: 2em;
-    margin-left: 3em;
-    width: 200px;
-    height: 200px;
-  }
-}
-
-// @media only screen and (max-width: 1100px) {
-//   .about {
-//     // padding: 4em 5em;
-//   }
-// }
-
-@media only screen and (max-width: 720px) {
   .about {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-
+    padding: 4em 0;
+    color: rgb(44, 44, 44);
+  
+    display: inline-flex;
+    
     .about-info {
-      border-bottom: none;
-      padding: 0 1em;
+      border-bottom: 1px solid #cacaca;
   
       h1 {
-        margin: 1em 0 0.2em 0;
         font-family: 'Alef', sans-serif;
-        font-size: 1.5em;
       }
     
       span {
-        margin-bottom: 1em;
+        font-family: 'PT Serif', serif;
+        font-weight: 200;
+        font-size: 1.2em;
       }
     }
-
+  
     img {
-      margin: 0;
-      width: 100%;
-      height: auto;
+      margin-bottom: 2em;
+      margin-left: 3em;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .about-container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .about-container {
+    width: 70%;
+
+    .about {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  
+      .about-info {
+        border-bottom: none;
+        padding: 0 1em;
+    
+        h1 {
+          margin: 1em 0 0.2em 0;
+          font-family: 'Alef', sans-serif;
+          font-size: 1.5em;
+        }
+      
+        span {
+          margin-bottom: 1em;
+        }
+      }
+  
+      img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .about {
-    .about-info {
-      border-bottom: none;
-      padding: 0 1em;
+  .about-container {
+    width: 80%;
+    
+    .about {
+      .about-info {
+        border-bottom: none;
+        padding: 0 1em;
+      }
     }
   }
 }

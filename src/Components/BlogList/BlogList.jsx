@@ -11,6 +11,7 @@ function BlogList(props) {
   
   return (
     <div className="blog-list-container">
+      <section className="sidebar"></section>
       {
         blogData.map((blog, i) => {
           return (
