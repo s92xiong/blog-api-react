@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Styles/About.css";
+import img from "../../images/img-icon.png";
 
 function About(props) {
 
@@ -11,7 +12,7 @@ function About(props) {
         <h1>About {name}</h1>
         <span>Full Stack Developer currently learning and building projects via The Odin Project. Sharing my interests and experiences through this blog.</span>
       </div>
-      <img src="https://pbs.twimg.com/profile_images/968698422751518720/zeP0peZp_400x400.jpg" alt="/" />
+      <img src={img} alt="/" />
     </div>
   );
 }
