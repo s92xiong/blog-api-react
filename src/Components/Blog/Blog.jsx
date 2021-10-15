@@ -49,6 +49,7 @@ function Blog({ match }) {
         }
         alt="" 
       />
+      {/* LOOP THROUGH TEXT ARRAY */}
       <p className="blog-text">{blog.text}</p>
       <h2 id="comments">Comments</h2>
       {
