@@ -1,7 +1,8 @@
 .blog {
-  margin: 4em 0;
   font-family: 'PT Serif', serif;
   color: #292929;
+  width: 70%;
+  margin: 3em auto;
 }
 
 .blog .blog-date {
