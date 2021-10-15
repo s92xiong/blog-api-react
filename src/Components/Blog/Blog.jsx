@@ -16,6 +16,7 @@ function Blog({ match }) {
     setInput({ ...input, [e.target.name]: e.target.value });
   };
 
+  // User submits a comment to a blog
   const handleSubmit = async (e) => {
     e.preventDefault();
     await fetch(`https://enigmatic-bastion-98317.herokuapp.com/posts/${match.params.id}`, {
@@ -56,7 +57,7 @@ function Blog({ match }) {
           <div className="blog-comment" key={i}>
             <h3>{comment.name}</h3>
             <p className="comment-text">{comment.text}</p>
-            <p>{comment.new_time}</p>
+            <p className="comment-time">{comment.new_time}</p>
           </div>
         ))
       }
@@ -78,7 +79,7 @@ function Blog({ match }) {
           onChange={handleChange}
         >
         </textarea>
-        <button type="submit">Submit Comment</button>
+        <button className="add-comment" type="submit">Add Comment</button>
       </form>
     </div>
   );
