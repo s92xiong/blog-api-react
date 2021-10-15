@@ -58,36 +58,38 @@ function Blog({ match }) {
         })
       }
       {/* <p className="blog-text">{blog.text}</p> */}
-      <h2 id="comments">Comments</h2>
-      {
-        blog.new_comments.map((comment, i) => (
-          <div className="blog-comment" key={i}>
-            <h3>{comment.name}</h3>
-            <p className="comment-text">{comment.text}</p>
-            <p className="comment-time">{comment.new_time}</p>
-          </div>
-        ))
-      }
-      
-      <form onSubmit={handleSubmit} method="POST">
-        <input 
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={input.name}
-          required
-          onChange={handleChange}
-        />
-        <textarea 
-          name="text"
-          placeholder="Share your thoughts" 
-          value={input.text}
-          required
-          onChange={handleChange}
-        >
-        </textarea>
-        <button className="add-comment" type="submit">Add Comment</button>
-      </form>
+      <section className="comments-section">
+        <h2 id="comments">Comments</h2>
+        {
+          blog.new_comments.map((comment, i) => (
+            <div className="blog-comment" key={i}>
+              <h3>{comment.name}</h3>
+              <p className="comment-text">{comment.text}</p>
+              <p className="comment-time">{comment.new_time}</p>
+            </div>
+          ))
+        }
+        
+        <form onSubmit={handleSubmit} method="POST">
+          <input 
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={input.name}
+            required
+            onChange={handleChange}
+          />
+          <textarea 
+            name="text"
+            placeholder="Share your thoughts" 
+            value={input.text}
+            required
+            onChange={handleChange}
+          >
+          </textarea>
+          <button className="add-comment" type="submit">Add Comment</button>
+        </form>
+      </section>
     </div>
   );
 }
