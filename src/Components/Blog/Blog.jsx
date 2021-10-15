@@ -50,7 +50,14 @@ function Blog({ match }) {
         alt="" 
       />
       {/* LOOP THROUGH TEXT ARRAY */}
-      <p className="blog-text">{blog.text}</p>
+      {
+        blog.text_arr.map((string, i) => {
+          return (<span key={i}>
+            <p className="blog-text">{string}</p>
+          </span>)
+        })
+      }
+      {/* <p className="blog-text">{blog.text}</p> */}
       <h2 id="comments">Comments</h2>
       {
         blog.new_comments.map((comment, i) => (
