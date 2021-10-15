@@ -28,6 +28,9 @@ function BlogList(props) {
                 alt="" 
               />
               <p className="blog-card-text">{blog.text}</p>
+              <a href={`/posts/${blog._id}/`}>
+                <p className="read-more">Read More</p>
+              </a>
               <a href={`/posts/${blog._id}/#comments`}>
                 <div className="comment-container">
                   <img className="comment-icon" src={commentIcon} alt="" />

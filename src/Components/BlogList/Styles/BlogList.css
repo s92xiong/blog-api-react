@@ -45,6 +45,11 @@
   line-height: 1.5em;
 }
 
+.blog-list-container .read-more {
+  margin-top: 0.7em;
+  color: #1a8917;
+}
+
 .blog-list-container .comment-container {
   margin: 1em 0 0 0;
   display: -webkit-box;
