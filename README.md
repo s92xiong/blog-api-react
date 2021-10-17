@@ -2,7 +2,7 @@
 
 This repo is the Front End (React) for the REST API repo which you can find below:
 
-[Link to Blog REST API](https://github.com/s92xiong/blog-api);
+[Link to Blog REST API](https://github.com/s92xiong/blog-api).
 
 [Live Preview](https://blog-api-react-32131.firebaseapp.com/).
 
