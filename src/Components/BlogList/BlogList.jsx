@@ -2,7 +2,6 @@ import React from 'react';
 import "./Styles/BlogList.css";
 import Loader from "../Loader/Loader";
 import commentIcon from "../../images/comment-icon.png";
-import img from "../../images/img-icon.png";
 import Sidebar from './Sidebar';
 
 function BlogList(props) {

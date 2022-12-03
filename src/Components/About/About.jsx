@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Styles/About.css";
-import img from "../../images/img-icon.png";
+import img from "../../images/self-img.jpeg";
 
 function About(props) {
 
@@ -11,9 +11,10 @@ function About(props) {
       <div className="about">
         <div className="about-info">
           <h1>About {name}</h1>
-          <span>Full Stack Developer currently learning and building projects via The Odin Project. Sharing my interests and experiences through this blog.</span>
+          <br />
+          <span>Software Developer with experience in MongoDB, Express, React, and Node. I previously worked on building i-Sight, a case management platform for corporate investigations</span>
         </div>
-        <img src={img} alt="/" />
+        <img className='self-img' src={img} alt="/" />
       </div>
     </div>
   );
