@@ -1,5 +1,5 @@
 const load_all_blog_data = async (setBlogData) => {
-  const response = await fetch("https://enigmatic-bastion-98317.herokuapp.com/");
+  const response = await fetch("https://blog-api-xf74.onrender.com/");
   const json_data = await response.json();
 
   const json_data_updated_time = json_data.map(obj => {

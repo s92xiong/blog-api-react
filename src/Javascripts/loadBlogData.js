@@ -1,5 +1,5 @@
 const loadBlogData = async (match, setBlog) => {
-  const response = await fetch(`https://enigmatic-bastion-98317.herokuapp.com${match.url}`);
+  const response = await fetch(`https://blog-api-xf74.onrender.com${match.url}`);
   const json_data = await response.json();
 
   // Configure date
